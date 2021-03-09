@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#head-section{
+    display: flex;
+    justify-content: center;
+}
+.head-contents{
+    height: 450px;
+    color: white;
+    width: 60%;
+    text-align: center;
+}
+#head-section .head-image{
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background-image: url("./img/showcase.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -3;
+    opacity: 0.4;
+}
+#head-section h1{
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+.head-contents a{
+    padding-top: 20px;
+    background-color:#333;
+    padding: 14px 30px;
+    border: 1px solid #666;
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px ;
+
+}
+.btn:hover{
+    background-color: #eaeaea;
+    color: black;
+}
+/* section-A */
+.section-a{
+    padding: 20px;
+    background: #eaeaea;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-a-content{
+    /* width: 70%; */
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+h2{
+    margin-bottom: 20px;
+}
+#section-b{
+    padding: 20px ;
+    display: flex;
+    justify-content: center;
+}
+.section-cards{
+    width: 80%;
+    padding: 20px;
+}
+.card{
+    width: 25%;
+    height: 450px;
+    background: #fff;
+    color: #333;
+    margin: 30px 10px;
+}
+.card-content{
+    height: 300px;
+    background: white;
+    color: #333;
+}
+.card-content h3{
+    padding: 30px 10px;
+}
+.card-content p{
+    padding: 0 15px;
+}
+.card-image{
+    background-image: url("./img/5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+.card-image2{
+    background-image: url("./img/1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+.card-image3{
+    background-image: url("./img/2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+/* Section-c */
+.section-c{
+    background: #fff;
+    color: #333;
+    padding: 70px 270px;
+}
+.section-c h2{
+    padding-bottom: 20px;
+}
+/* section-d */
+.section-d{
+    display: flex;
+}
+.section-d h2{
+    margin-bottom: 30px;
+}
+.section-d p{
+    margin-bottom: 15px;
+}
+.section-d-column1{
+    background-color: #2690d4;
+    width: 50%;
+    padding:50px;
+}
+.section-d-column2{
+    background-color: #333 ;
+    width: 50%;
+    padding:50px;
+}
+/* Footer */
+.main-footer{
+    display: flex;
+    background: #000;
+    justify-content:space-around;
+    padding:30px;
+}
+.main-footer-col1{
+    width: 50%;
+}
+.main-footer-col2{
+    width: 50%;
+}
+.main-footer-col2 a{
+    color: #2690d4;
+    text-decoration: none;
+}
+/* Respondsiveness */
+@media screen and (max-width:600px){
+    .head-contents {
+        width: 60%;
+        margin-top: -50px;
+    }
+    .head-contents h1{
+        padding-top: 50px;
+        padding-bottom: 20px;
+        font-size: 30px;
+    }
+    /* section-a */
+    .section-a{
+        padding-right: 20px;
+    }
+    .section-a h2{
+        font-size: 20px;
+        /* padding-right: 50px; */
+    }
+    .section-a-content{
+        display: flex;
+        flex-direction: column;
+        /* padding-right: 50px; */
+    }
+    .section-a-content p{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /* section-b */
+    #section-b{
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    .card{
+        width: 100%;
+    }
+    /* section-c */
+    .section-c{
+        width: 100%;
+        padding: 0px;
+    }
+    .section-c h2{
+        font-size:20px;
+        padding: 20px;
+    }
+    .section-c p{
+     padding-bottom: 20px;
+    }
+    /* section-d */
+    .section-d{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-d-column1{
+        width: 100%;
+        padding: 0;
+    }
+    .section-d-column2{
+        width: 100%;
+        padding: 0;
+    }
+    .section-d h2{
+        padding:10px;
+        margin-top: 30px;
+    }
+    .section-d p{
+        padding: 30px;
+        margin-top: -40px;
+    }
+}
